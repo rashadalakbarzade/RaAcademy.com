@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RaTrading Academy — профессиональный курс по Smart Money Concepts и Price Action. Обучение трейдингу с Рашадом Алекберзаде. Торговля против толпы.">
+    <meta name="keywords" content="трейдинг, SMC, Smart Money Concepts, Price Action, Forex, обучение трейдингу, RaTrading, Рашад Алекберзаде">
+    <meta name="author" content="Rashad Alakbarzade - RaTrading Academy">
+    <meta property="og:title" content="RaTrading Academy — Торговля Против Толпы">
+    <meta property="og:description" content="Освойте Smart Money Concepts и торгуйте вместе с институциональными игроками">
+    <meta property="og:type" content="website">
+    <title>RaTrading Academy — Торговля Против Толпы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&family=Barlow+Condensed:wght@600;700;800;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="RaTrading Academy" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+                <li><a href="#course" class="nav-link">Программа</a></li>
+                <li><a href="#benefits" class="nav-link">Преимущества</a></li>
+                <li><a href="#pricing" class="nav-link">Тарифы</a></li>
+                <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="nav-socials">
+                    <a href="https://t.me/RA_trading" target="_blank" class="social-icon-sm" title="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/rashad.alakbarzade" target="_blank" class="social-icon-sm" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/994557886659" target="_blank" class="social-icon-sm" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <a href="https://wa.me/994557886659" target="_blank" class="btn btn-primary nav-cta">
+                    <i class="fas fa-graduation-cap"></i> Записаться
+                </a>
+                <button class="burger-btn" id="burgerBtn" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-chart-overlay"></div>
+            <canvas id="heroCanvas"></canvas>
+        </div>
+        <div class="hero-photo-side">
+            <img src="images/rashad.jpg" alt="Рашад Алекберзаде" class="hero-photo-img">
+            <div class="hero-photo-gradient"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-chart-line"></i>
+                Smart Money Concepts · Price Action
+            </div>
+            <h1 class="hero-title">
+                СТАНЬТЕ ЧАСТЬЮ<br>
+                <span class="text-gold">SMART MONEY</span>
+            </h1>
+            <p class="hero-subtitle">
+                Освойте Smart Money Concepts и торгуйте вместе с<br class="hero-br">
+                институциональными игроками, а не против них
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num">18</span>
+                    <span class="stat-label">Уроков</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">15+</span>
+                    <span class="stat-label">Часов</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">100+</span>
+                    <span class="stat-label">Реальных кейсов</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num text-green">65%+</span>
+                    <span class="stat-label">Win Rate</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="https://wa.me/994557886659" target="_blank" class="btn btn-primary btn-lg">
+                    <i class="fab fa-whatsapp"></i>
+                    Записаться на курс
+                </a>
+                <a href="https://t.me/RA_trading" target="_blank" class="btn btn-outline btn-lg">
+                    <i class="fab fa-telegram"></i>
+                    Смотреть в Telegram
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <span>Листайте вниз</span>
+                <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+            </div>
+        </div>
+        <div class="hero-gradient-bottom"></div>
+    </section>
+
+    <!-- ===== TICKER BANNER ===== -->
+    <div class="ticker-banner">
+        <div class="ticker-track">
+            <span>EURUSD +3.5R ✦</span>
+            <span>BTCUSD +3.0R ✦</span>
+            <span>Smart Money Concepts ✦</span>
+            <span>Price Action Mastery ✦</span>
+            <span>Win Rate 65%+ ✦</span>
+            <span>Order Block · BOS · CHOCH ✦</span>
+            <span>Fair Value Gap · Inducement ✦</span>
+            <span>Институциональный трейдинг ✦</span>
+            <span>EURUSD +3.5R ✦</span>
+            <span>BTCUSD +3.0R ✦</span>
+            <span>Smart Money Concepts ✦</span>
+            <span>Price Action Mastery ✦</span>
+            <span>Win Rate 65%+ ✦</span>
+            <span>Order Block · BOS · CHOCH ✦</span>
+            <span>Fair Value Gap · Inducement ✦</span>
+            <span>Институциональный трейдинг ✦</span>
+        </div>
+    </div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-col" data-aos="fade-right">
+                    <div class="about-image-frame">
+                        <div class="about-image-wrapper">
+                            <img src="images/rashad.jpg" alt="Рашад Алекберзаде — профессиональный трейдер, основатель RaTrading Academy" class="rashad-photo">
+                        </div>
+                        <div class="about-card-badge">
+                            <i class="fas fa-award text-gold"></i>
+                            <span>7+ лет в трейдинге</span>
+                        </div>
+                        <div class="about-stats-mini">
+                            <div class="mini-stat">
+                                <span class="mini-num text-gold">7+</span>
+                                <span class="mini-label">лет опыта</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="mini-num text-green">65%+</span>
+                                <span class="mini-label">Win Rate</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="mini-num text-gold">100+</span>
+                                <span class="mini-label">студентов</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-col" data-aos="fade-left">
+                    <div class="section-tag">Обо мне</div>
+                    <h2 class="section-title">
+                        Рашад <span class="text-gold">Алекберзаде</span>
+                    </h2>
+                    <div class="about-text">
+                        <p>Меня зовут <strong>Рашад Алекберзаде</strong>. Уже более 7 лет я живу трейдингом — анализирую рынки, торгую, обучаю и постоянно развиваюсь.</p>
+                        <p>Мой путь был не из лёгких: я прошёл через ошибки, сливы, страхи и сомнения. Но именно этот путь сделал меня тем, кто я есть — <strong>трейдером с устойчивой системой мышления и железной дисциплиной</strong>.</p>
+                        <p>Сегодня моя миссия — помогать другим понять рынок и научиться зарабатывать осознанно, без хаоса и эмоций.</p>
+                        <blockquote class="about-quote">
+                            <i class="fas fa-quote-left text-gold"></i>
+                            Я не просто преподаю стратегии. Я обучаю мышлению трейдера — как управлять собой, капиталом и рисками.
+                        </blockquote>
+                    </div>
+                    <div class="about-features">
+                        <div class="about-feature"><i class="fas fa-check-circle text-green"></i> Реальный опыт торговли с 2017 года</div>
+                        <div class="about-feature"><i class="fas fa-check-circle text-green"></i> Специалист по Smart Money Concepts (SMC)</div>
+                        <div class="about-feature"><i class="fas fa-check-circle text-green"></i> Практический подход — только реальные кейсы</div>
+                        <div class="about-feature"><i class="fas fa-check-circle text-green"></i> Авторская методика управления рисками</div>
+                    </div>
+                    <a href="https://t.me/RA_trading" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-telegram"></i>
+                        Подписаться на Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COURSE PROGRAM ===== -->
+    <section class="course section" id="course">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Программа курса</div>
+                <h2 class="section-title">Полный путь от <span class="text-gold">новичка</span> до профи</h2>
+                <p class="section-desc">18 структурированных уроков, охватывающих все аспекты профессионального трейдинга</p>
+            </div>
+            <div class="course-blocks">
+
+                <!-- Block 1 -->
+                <div class="course-block" data-aos="fade-up">
+                    <div class="block-header">
+                        <div class="block-icon block-icon-1">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="block-info">
+                            <span class="block-num">Блок 1</span>
+                            <h3 class="block-title">Основы и Механика</h3>
+                            <span class="block-lessons">Уроки 1–4</span>
+                        </div>
+                        <div class="block-progress">
+                            <div class="progress-bar"><div class="progress-fill" style="width:22%"></div></div>
+                        </div>
+                    </div>
+                    <div class="lessons-list">
+                        <div class="lesson-item">
+                            <span class="lesson-num">01</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Основы рынка Forex</span>
+                                <span class="lesson-desc">Механизм работы рынка, участники, котировки</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">02</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Интерфейс TradingView</span>
+                                <span class="lesson-desc">Настройка платформы, инструменты анализа</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">03</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Японские свечи и Price Action</span>
+                                <span class="lesson-desc">Паттерны, сигналы, интерпретация</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">04</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Максимумы и минимумы</span>
+                                <span class="lesson-desc">Определение ключевых уровней рынка</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 2 -->
+                <div class="course-block" data-aos="fade-up" data-aos-delay="100">
+                    <div class="block-header">
+                        <div class="block-icon block-icon-2">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="block-info">
+                            <span class="block-num">Блок 2</span>
+                            <h3 class="block-title">Структура и Ликвидность</h3>
+                            <span class="block-lessons">Уроки 5–8</span>
+                        </div>
+                        <div class="block-progress">
+                            <div class="progress-bar"><div class="progress-fill" style="width:44%"></div></div>
+                        </div>
+                    </div>
+                    <div class="lessons-list">
+                        <div class="lesson-item">
+                            <span class="lesson-num">05</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Inducement (IDM)</span>
+                                <span class="lesson-desc">Ловушки ликвидности — как умные деньги заманивают толпу</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">06</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Структура: BOS и CHOCH</span>
+                                <span class="lesson-desc">Break of Structure и Change of Character</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">07</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Imbalance / Fair Value Gap (FVG)</span>
+                                <span class="lesson-desc">Дисбалансы и зоны справедливой стоимости</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">08</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Order Block (OB)</span>
+                                <span class="lesson-desc">Блоки ордеров — ключевые зоны входа институционалов</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 3 -->
+                <div class="course-block" data-aos="fade-up" data-aos-delay="200">
+                    <div class="block-header">
+                        <div class="block-icon block-icon-3">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="block-info">
+                            <span class="block-num">Блок 3</span>
+                            <h3 class="block-title">Продвинутый Анализ</h3>
+                            <span class="block-lessons">Уроки 9–12</span>
+                        </div>
+                        <div class="block-progress">
+                            <div class="progress-bar"><div class="progress-fill" style="width:67%"></div></div>
+                        </div>
+                    </div>
+                    <div class="lessons-list">
+                        <div class="lesson-item">
+                            <span class="lesson-num">09</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Order Flow</span>
+                                <span class="lesson-desc">Поток ордеров и динамика рыночного давления</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">10</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Top-Down анализ</span>
+                                <span class="lesson-desc">Работа со старшими таймфреймами — от H4 до M5</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">11</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Fixed Volume Profile</span>
+                                <span class="lesson-desc">Анализ объёмных зон и профиля рынка</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">12</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Зоны интереса (POI)</span>
+                                <span class="lesson-desc">Point of Interest — точки входа институциональных игроков</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 4 -->
+                <div class="course-block" data-aos="fade-up" data-aos-delay="300">
+                    <div class="block-header">
+                        <div class="block-icon block-icon-4">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="block-info">
+                            <span class="block-num">Блок 4</span>
+                            <h3 class="block-title">Практика и Психология</h3>
+                            <span class="block-lessons">Уроки 13–18</span>
+                        </div>
+                        <div class="block-progress">
+                            <div class="progress-bar"><div class="progress-fill" style="width:100%"></div></div>
+                        </div>
+                    </div>
+                    <div class="lessons-list">
+                        <div class="lesson-item">
+                            <span class="lesson-num">13</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">MetaTrader 5</span>
+                                <span class="lesson-desc">Исполнение сделок, ордера, риск-менеджмент</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">14</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Психология трейдинга</span>
+                                <span class="lesson-desc">Эмоциональный контроль, дисциплина, мышление победителя</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">15</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Полная торговая стратегия</span>
+                                <span class="lesson-desc">Авторская система от А до Я — A+ Setup</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                        <div class="lesson-item">
+                            <span class="lesson-num">16–18</span>
+                            <div class="lesson-content">
+                                <span class="lesson-title">Разбор реальных сделок</span>
+                                <span class="lesson-desc">100+ кейсов: EURUSD, BTCUSD и другие — риск-менеджмент на практике</span>
+                            </div>
+                            <i class="fas fa-play-circle lesson-icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="course-cta">
+                <a href="https://wa.me/994557886659" target="_blank" class="btn btn-primary btn-lg">
+                    <i class="fab fa-whatsapp"></i>
+                    Начать обучение
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS SECTION ===== -->
+    <section class="benefits section" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Преимущества</div>
+                <h2 class="section-title">Что вы <span class="text-gold">получаете</span></h2>
+                <p class="section-desc">Полный набор материалов и поддержки для вашего успеха в трейдинге</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="benefit-icon"><i class="fas fa-video"></i></div>
+                    <h3>18 видеоуроков</h3>
+                    <p>От основ до Pro-стратегий. Доступ навсегда, смотрите в любое время.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="benefit-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Методички и чек-листы</h3>
+                    <p>PDF материалы, шаблоны и чек-листы для каждого урока.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon"><i class="fab fa-discord"></i></div>
+                    <h3>Закрытое сообщество</h3>
+                    <p>Доступ в закрытый Discord RaTrading с активными трейдерами.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="benefit-icon"><i class="fas fa-users"></i></div>
+                    <h3>Q&A сессии</h3>
+                    <p>Еженедельные живые сессии с менторами для разбора ваших вопросов.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Журнал трейдера</h3>
+                    <p>Готовый шаблон в Notion для ведения торгового журнала.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="benefit-icon"><i class="fas fa-calculator"></i></div>
+                    <h3>Калькулятор риска</h3>
+                    <p>Профессиональный калькулятор риска для MetaTrader.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Реальные кейсы</h3>
+                    <p>100+ разборов реальных сделок с подробным объяснением.</p>
+                </div>
+                <div class="benefit-card benefit-card-highlight" data-aos="fade-up" data-aos-delay="350">
+                    <div class="benefit-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Гарантированный результат</h3>
+                    <p>Win Rate <strong class="text-green">65%+</strong> по авторской стратегии. Проверено на реальных рынках.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ROADMAP ===== -->
+    <section class="roadmap section" id="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Дорожная карта</div>
+                <h2 class="section-title">Ваш путь к <span class="text-gold">профессионализму</span></h2>
+            </div>
+            <div class="roadmap-track">
+                <div class="roadmap-item" data-aos="fade-right">
+                    <div class="road-dot road-dot-1"></div>
+                    <div class="road-card">
+                        <span class="road-stage">Этап 1</span>
+                        <h4>Фундамент</h4>
+                        <p>Основы рынка, платформы, свечной анализ</p>
+                        <span class="road-time">3–4 недели</span>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-left">
+                    <div class="road-dot road-dot-2"></div>
+                    <div class="road-card">
+                        <span class="road-stage">Этап 2</span>
+                        <h4>Структура</h4>
+                        <p>SMC, ликвидность, BOS, CHOCH, FVG, OB</p>
+                        <span class="road-time">1–2 недели</span>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-right">
+                    <div class="road-dot road-dot-3"></div>
+                    <div class="road-card">
+                        <span class="road-stage">Этап 3</span>
+                        <h4>Анализ</h4>
+                        <p>Order Flow, Top-Down, Volume Profile, POI</p>
+                        <span class="road-time">5–6 недель</span>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-left">
+                    <div class="road-dot road-dot-4"></div>
+                    <div class="road-card">
+                        <span class="road-stage">Этап 4</span>
+                        <h4>Практика</h4>
+                        <p>MT5, стратегия, реальные кейсы, риск-менеджмент</p>
+                        <span class="road-time">7–8 недель</span>
+                    </div>
+                </div>
+                <div class="roadmap-item" data-aos="fade-right">
+                    <div class="road-dot road-dot-5"></div>
+                    <div class="road-card road-card-final">
+                        <span class="road-stage">Этап 5</span>
+                        <h4>Профи <i class="fas fa-star text-gold"></i></h4>
+                        <p>Торговля с реальным капиталом, проп-трейдинг</p>
+                        <span class="road-time">Месяц 3+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <section class="pricing section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Тарифы обучения</div>
+                <h2 class="section-title">Выберите свой <span class="text-gold">формат</span></h2>
+                <p class="section-desc">Два варианта обучения под ваш стиль и цели</p>
+            </div>
+            <div class="pricing-grid">
+
+                <!-- Group Pricing -->
+                <div class="pricing-card" data-aos="fade-right">
+                    <div class="pricing-header-card">
+                        <div class="pricing-icon"><i class="fas fa-users"></i></div>
+                        <h3>Групповое<br>обучение</h3>
+                        <span class="pricing-badge pricing-badge-group">До 5 человек</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-green"></i> Группа до 5 человек</li>
+                        <li><i class="fas fa-check text-green"></i> Персональный менторинг внутри группы</li>
+                        <li><i class="fas fa-check text-green"></i> Еженедельные групповые сессии</li>
+                        <li><i class="fas fa-check text-green"></i> Разбор реальных сделок в группе</li>
+                        <li><i class="fas fa-check text-green"></i> Доступ к закрытому сообществу RaTrading</li>
+                        <li><i class="fas fa-check text-green"></i> Общий Discord канал группы</li>
+                        <li><i class="fas fa-check text-green"></i> Все материалы и методички</li>
+                        <li><i class="fas fa-check text-green"></i> Калькулятор риска для MetaTrader</li>
+                    </ul>
+                    <a href="https://wa.me/994557886659" target="_blank" class="btn btn-outline btn-full">
+                        <i class="fab fa-whatsapp"></i>
+                        Записаться в группу
+                    </a>
+                </div>
+
+                <!-- Individual Pricing -->
+                <div class="pricing-card pricing-card-premium" data-aos="fade-up">
+                    <div class="pricing-recommended">
+                        <i class="fas fa-star"></i> Рекомендуем
+                    </div>
+                    <div class="pricing-header-card">
+                        <div class="pricing-icon pricing-icon-premium"><i class="fas fa-crown"></i></div>
+                        <h3>Индивидуальное<br>обучение</h3>
+                        <span class="pricing-badge pricing-badge-premium">Premium</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check text-gold"></i> Один-на-один обучение с Рашадом</li>
+                        <li><i class="fas fa-check text-gold"></i> Персональный план развития</li>
+                        <li><i class="fas fa-check text-gold"></i> Индивидуальные сессии разбора сделок</li>
+                        <li><i class="fas fa-check text-gold"></i> Приоритетная поддержка 24/7</li>
+                        <li><i class="fas fa-check text-gold"></i> Доступ к закрытому сообществу RaTrading</li>
+                        <li><i class="fas fa-check text-gold"></i> Персональный Discord канал</li>
+                        <li><i class="fas fa-check text-gold"></i> Все материалы и методички</li>
+                        <li><i class="fas fa-check text-gold"></i> Бонусы: PDF A+ Setup + Калькулятор</li>
+                    </ul>
+                    <a href="https://wa.me/994557886659" target="_blank" class="btn btn-primary btn-full">
+                        <i class="fab fa-whatsapp"></i>
+                        Записаться на индивидуальное
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Bonuses -->
+            <div class="bonuses-section" data-aos="fade-up">
+                <div class="bonuses-header">
+                    <i class="fas fa-gift text-gold"></i>
+                    <h3>Бонусы к курсу</h3>
+                </div>
+                <div class="bonuses-grid">
+                    <div class="bonus-item">
+                        <i class="fas fa-file-pdf text-gold"></i>
+                        <span>PDF Чек-лист входа (A+ Setup)</span>
+                    </div>
+                    <div class="bonus-item">
+                        <i class="fas fa-calculator text-gold"></i>
+                        <span>Калькулятор риска для MetaTrader</span>
+                    </div>
+                    <div class="bonus-item">
+                        <i class="fab fa-discord text-gold"></i>
+                        <span>Закрытое сообщество RaTrading</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REVIEWS / CASES ===== -->
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Кейсы и результаты</div>
+                <h2 class="section-title">Реальные <span class="text-gold">сделки</span></h2>
+                <p class="section-desc">Доказательства работы стратегии на реальном рынке</p>
+            </div>
+
+            <!-- Win Rate Visual -->
+            <div class="winrate-visual" data-aos="fade-up">
+                <div class="wr-circle-wrap">
+                    <svg class="wr-svg" viewBox="0 0 200 200">
+                        <circle cx="100" cy="100" r="88" fill="none" stroke="#141E30" stroke-width="16"/>
+                        <circle cx="100" cy="100" r="88" fill="none" stroke="#50D890" stroke-width="16"
+                            stroke-dasharray="553 800" stroke-linecap="round"
+                            transform="rotate(-90 100 100)" class="wr-progress"/>
+                    </svg>
+                    <div class="wr-text">
+                        <span class="wr-num">65%+</span>
+                        <span class="wr-label">Win Rate</span>
+                    </div>
+                </div>
+                <div class="wr-stats">
+                    <div class="wr-stat">
+                        <i class="fas fa-chart-line text-green"></i>
+                        <div>
+                            <span class="wr-stat-num">100+</span>
+                            <span class="wr-stat-label">Реальных кейсов</span>
+                        </div>
+                    </div>
+                    <div class="wr-stat">
+                        <i class="fas fa-coins text-gold"></i>
+                        <div>
+                            <span class="wr-stat-num">+3.5R</span>
+                            <span class="wr-stat-label">Средний профит</span>
+                        </div>
+                    </div>
+                    <div class="wr-stat">
+                        <i class="fas fa-shield-alt text-gold"></i>
+                        <div>
+                            <span class="wr-stat-num">1:3+</span>
+                            <span class="wr-stat-label">Риск/Прибыль</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cases Slider -->
+            <div class="cases-slider-wrap">
+                <div class="cases-slider" id="casesSlider">
+                    <div class="case-card case-win">
+                        <div class="case-header">
+                            <div class="case-pair">
+                                <span class="pair-flag">💶</span>
+                                <span>EURUSD</span>
+                            </div>
+                            <span class="case-direction case-long">LONG</span>
+                        </div>
+                        <div class="case-chart">
+                            <canvas id="caseChart1" width="300" height="120"></canvas>
+                        </div>
+                        <div class="case-details">
+                            <div class="case-detail">
+                                <span class="cd-label">Вход</span>
+                                <span class="cd-val">Order Block (OB)</span>
+                            </div>
+                            <div class="case-detail">
+                                <span class="cd-label">Структура</span>
+                                <span class="cd-val">BOS + FVG</span>
+                            </div>
+                            <div class="case-detail">
+                                <span class="cd-label">Результат</span>
+                                <span class="cd-val text-green">+3.5R ✓</span>
+                            </div>
+                        </div>
+                        <div class="case-result case-result-win">
+                            <i class="fas fa-check-circle"></i>
+                            <span>+3.5R PROFIT</span>
+                        </div>
+                    </div>
+                    <div class="case-card case-win">
+                        <div class="case-header">
+                            <div class="case-pair">
+                                <span class="pair-flag">₿</span>
+                                <span>BTCUSD</span>
+                            </div>
+                            <span class="case-direction case-short">SHORT</span>
+                        </div>
+                        <div class="case-chart">
+                            <canvas id="caseChart2" width="300" height="120"></canvas>
+                        </div>
+                        <div class="case-details">
+                            <div class="case-detail">
+                                <span class="cd-label">Вход</span>
+                                <span class="cd-val">Inducement + OB</span>
+                            </div>
+                            <div class="case-detail">
+                                <span class="cd-label">Структура</span>
+                                <span class="cd-val">CHOCH + Imbalance</span>
+                            </div>
+                            <div class="case-detail">
+                                <span class="cd-label">Результат</span>
+                                <span class="cd-val text-green">+3.0R ✓</span>
+                            </div>
+                        </div>
+                        <div class="case-result case-result-win">
+                            <i class="fas fa-check-circle"></i>
+                            <span>+3.0R PROFIT</span>
+                        </div>
+                    </div>
+                    <div class="case-card case-win">
+                        <div class="case-header">
+                            <div class="case-pair">
+                                <span class="pair-flag">💴</span>
+                                <span>USDJPY</span>
+                            </div>
+                            <span class="case-direction case-long">LONG</span>
+                        </div>
+                        <div class="case-chart">
+                            <canvas id="caseChart3" width="300" height="120"></canvas>
+                        </div>
+                        <div class="case-details">
+                            <div class="case-detail">
+                                <span class="cd-label">Вход</span>
+                                <span class="cd-val">POI + FVG</span>
+                            </div>
+                            <div class="case-detail">
+                                <span class="cd-label">Структура</span>
+                                <span class="cd-val">BOS + Volume</span>
+                            </div>
+                            <div class="case-detail">
+                                <span class="cd-label">Результат</span>
+                                <span class="cd-val text-green">+2.8R ✓</span>
+                            </div>
+                        </div>
+                        <div class="case-result case-result-win">
+                            <i class="fas fa-check-circle"></i>
+                            <span>+2.8R PROFIT</span>
+                        </div>
+                    </div>
+                    <div class="case-card case-win">
+                        <div class="case-header">
+                            <div class="case-pair">
+                                <span class="pair-flag">🥇</span>
+                                <span>XAUUSD</span>
+                            </div>
+                            <span class="case-direction case-long">LONG</span>
+                        </div>
+                        <div class="case-chart">
+                            <canvas id="caseChart4" width="300" height="120"></canvas>
+                        </div>
+                        <div class="case-details">
+                            <div class="case-detail">
+                                <span class="cd-label">Вход</span>
+                                <span class="cd-val">Order Block + IDM</span>
+                            </div>
+                            <div class="case-detail">
+                                <span class="cd-label">Структура</span>
+                                <span class="cd-val">Top-Down H4→M15</span>
+                            </div>
+                            <div class="case-detail">
+                                <span class="cd-label">Результат</span>
+                                <span class="cd-val text-green">+4.1R ✓</span>
+                            </div>
+                        </div>
+                        <div class="case-result case-result-win">
+                            <i class="fas fa-check-circle"></i>
+                            <span>+4.1R PROFIT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevCase" aria-label="Предыдущий"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn" id="nextCase" aria-label="Следующий"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">FAQ</div>
+                <h2 class="section-title">Часто задаваемые <span class="text-gold">вопросы</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Для кого этот курс?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Курс подходит как для полных новичков без опыта в трейдинге, так и для тех, кто уже торгует, но не получает стабильного результата. Главное — желание учиться и применять знания на практике.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                    <button class="faq-question">
+                        <span>Нужна ли предварительная подготовка?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Нет. Программа построена с нуля — начинаем с самых основ рынка и постепенно переходим к продвинутым концепциям SMC. Всё объясняется простым и понятным языком.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>Какой результат я получу?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>После прохождения курса вы освоите профессиональную торговую стратегию с Win Rate 65%+, научитесь анализировать рынок через призму Smart Money, управлять рисками и своей психологией.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                    <button class="faq-question">
+                        <span>Как проходит обучение?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Обучение проходит в формате видеоуроков + живые Q&A сессии. Вы учитесь в своём темпе, а менторы всегда доступны для вопросов в закрытом Discord сообществе.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>Какой стартовый капитал нужен?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Для обучения капитал не нужен — всё изучается на демо-счёте. Для реальной торговли рекомендуем начинать с $500–1000. Также обсуждаем варианты проп-трейдинга (торговля с чужим капиталом).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="final-cta section" id="contact">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <div class="section-tag">Начать сейчас</div>
+                <h2 class="cta-title">
+                    Готов стать частью<br>
+                    <span class="text-gold">Smart Money?</span>
+                </h2>
+                <p class="cta-desc">Запишись на курс прямо сейчас и начни торговать вместе с институциональными игроками</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/994557886659" target="_blank" class="btn btn-primary btn-xl">
+                        <i class="fab fa-whatsapp"></i>
+                        Записаться на курс
+                    </a>
+                    <a href="https://t.me/RA_trading" target="_blank" class="btn btn-outline btn-xl">
+                        <i class="fab fa-telegram"></i>
+                        Написать в Telegram
+                    </a>
+                </div>
+                <div class="cta-meta">
+                    <span><i class="fas fa-clock text-gold"></i> ~18 часов контента</span>
+                    <span><i class="fas fa-infinity text-gold"></i> Доступ навсегда</span>
+                    <span><i class="fas fa-headset text-gold"></i> Поддержка ментора</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo footer-logo">
+                        <img src="images/logo.png" alt="RaTrading Academy" class="logo-img logo-img-footer">
+                    </a>
+                    <p class="footer-tagline">«Торговля Против Толпы»</p>
+                    <p class="footer-desc">Профессиональное обучение Smart Money Concepts и Price Action от практикующего трейдера Рашада Алекберзаде.</p>
+                    <div class="footer-socials">
+                        <a href="https://t.me/RA_trading" target="_blank" class="footer-social telegram" title="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/rashad.alakbarzade?igsh=MTkzMDl6d3cxbzB6OQ%3D%3D&utm_source=qr" target="_blank" class="footer-social instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/994557886659" target="_blank" class="footer-social whatsapp" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#course">Программа</a></li>
+                        <li><a href="#benefits">Преимущества</a></li>
+                        <li><a href="#pricing">Тарифы</a></li>
+                        <li><a href="#reviews">Кейсы</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-course">
+                    <h4>Курс</h4>
+                    <ul>
+                        <li><i class="fas fa-check text-green"></i> 18 видеоуроков</li>
+                        <li><i class="fas fa-check text-green"></i> Smart Money Concepts</li>
+                        <li><i class="fas fa-check text-green"></i> Price Action</li>
+                        <li><i class="fas fa-check text-green"></i> Психология трейдинга</li>
+                        <li><i class="fas fa-check text-green"></i> Риск-менеджмент</li>
+                        <li><i class="fas fa-check text-green"></i> 100+ реальных кейсов</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Связаться</h4>
+                    <div class="contact-items">
+                        <a href="https://wa.me/994557886659" target="_blank" class="contact-item">
+                            <i class="fab fa-whatsapp text-green"></i>
+                            <span>+994 55 788 66 59</span>
+                        </a>
+                        <a href="https://t.me/RA_trading" target="_blank" class="contact-item">
+                            <i class="fab fa-telegram" style="color:#2CA5E0"></i>
+                            <span>@RA_trading</span>
+                        </a>
+                        <a href="https://www.instagram.com/rashad.alakbarzade" target="_blank" class="contact-item">
+                            <i class="fab fa-instagram" style="color:#E1306C"></i>
+                            <span>@rashad.alakbarzade</span>
+                        </a>
+                    </div>
+                    <a href="https://wa.me/994557886659" target="_blank" class="btn btn-primary btn-full footer-cta">
+                        <i class="fab fa-whatsapp"></i>
+                        Записаться на курс
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 RaTrading Academy. Все права защищены.</p>
+                <p class="footer-disclaimer">Торговля на финансовых рынках сопряжена с рисками. Результаты прошлого не гарантируют будущих доходов.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
